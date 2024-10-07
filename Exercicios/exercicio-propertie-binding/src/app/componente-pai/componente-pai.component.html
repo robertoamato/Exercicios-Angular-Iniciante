@@ -1,10 +1,27 @@
 <div class="class">
-
-<h2>two way data binding</h2>
-
-<form >
-<input type="text" [(ngModel)]="name" name="name" placeholder="digite seu nome" />
-<input type="submit" value="ok">
-</form>
-<p>o seu nome é {{name}}</p>
-</div>
+    <!-- Div que contém o formulário e o texto, com uma classe CSS chamada 'class' aplicada -->
+  
+    <h2>two way data binding</h2>
+    <!-- Cabeçalho H2 que exibe o texto "two way data binding", que indica a funcionalidade de ligação bidirecional de dados -->
+  
+    <form>
+      <!-- Início de um formulário HTML -->
+  
+      <input type="text" [(ngModel)]="name" name="name" placeholder="digite seu nome" />
+      <!-- Campo de entrada de texto (input) onde o usuário digita o nome
+           [(ngModel)]="name" - Faz a ligação bidirecional do valor do campo de texto com a variável "name" do componente Angular
+           name="name" - Define o nome do campo de entrada no formulário
+           placeholder="digite seu nome" - Exibe um texto de sugestão dentro do campo de entrada enquanto está vazio -->
+  
+      <input type="submit" value="ok">
+      <!-- Botão de envio (submit) do formulário com o texto "ok" -->
+  
+    </form>
+    <!-- Fim do formulário -->
+  
+    <p>o seu nome é {{name}}</p>
+    <!-- Parágrafo que exibe o nome digitado pelo usuário
+         {{name}} - Interpolação que exibe o valor da variável "name" no HTML, mostrando o que foi digitado no campo de entrada -->
+  </div>
+  <!-- Fim da div que agrupa todo o conteúdo -->
+  
